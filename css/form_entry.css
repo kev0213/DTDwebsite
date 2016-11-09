@@ -1,3 +1,13 @@
+body::-webkit-scrollbar{
+	width: 1em;
+	background-color: #222222;
+}
+body::-webkit-scrollbar-corner{
+  background-color: #999999;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #999999;
+}
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 3s;
