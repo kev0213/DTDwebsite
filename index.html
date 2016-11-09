@@ -1,0 +1,66 @@
+<!DOCTYPE html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DTDWEB</title>
+<link rel="stylesheet" type="text/css" href="css/form_entry.css">
+
+<link rel="shortcut icon" href="images/DTD_Icon.ico">
+
+
+<STYLE TYPE="text/css"> 
+
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+#MAX {
+	width: 1600px;
+	 position: relative;
+	left: 50%;
+ 	margin-left: -800px;
+}
+body {background:black;}
+
+img {/*PIC比例*/
+	width: 100%;
+	height: auto;
+	vertical-align : middle;
+	position: absolute;
+	margin-top: 0px;
+}
+</STYLE>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body leftmargin="0" topmargin="0" onLoad="MM_preloadImages('images/enter_bg/entry_bg4.jpg')">
+
+<div id="MAX">
+ <a href="about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4',0,'images/enter_bg/entry_bg4.jpg',1)"> <div id="enterbut">
+</div></a>
+<img src="images/enter_bg/entry_bg.jpg" width="1600" height="900" class="animated fadeIn" >
+<img src="images/enter_bg/entry_bg2.jpg" width="1600" height="900" class="animated2 fadeIn">
+<img src="images/enter_bg/entry_bg3.jpg" width="1600" height="900" class="animated3 fadeIn" id="Image4">
+</div>
+</body>
+</html>
