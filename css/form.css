@@ -1,0 +1,542 @@
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.Icon:hover {
+	
+   color: white;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  background: rgba(0, 0, 0, 0.6);
+  
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+
+p{
+	margin-top: 10px;
+	margin-left: 10px;
+	text-align: center;
+	
+	}
+a {
+    text-decoration:none;
+}
+.anchor{/*錨點偏移*/
+	display: block;
+	height: 89px;
+	visibility: hidden;
+	margin-top: -90px;
+}
+img {/*PIC比例*/
+width: 100%;
+	height: auto;
+}
+	#One {/*視覺第一欄*/
+	
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size : 70%;
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 30%;
+	width: 50%;
+	margin-left:25%;
+	margin-top: 7%;
+background-image: url(../images/sSpot_bg.png);
+
+}
+	
+
+
+
+#Two{/*視覺第二欄  ICON
+	margin-left: 20%;*/
+	margin-top: 5%;
+}
+#AboutDTD{/*DTD第二欄 文字*/
+	width: 70%;
+	height: 20%;
+	margin-left: 15%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #CCC;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#MainSiteframe{/*DTD影片 比例用*/
+	width: 40%;
+	/*height=60%*9=33%*/
+	margin-top: 5%;
+	margin-left: 30%;
+	margin-bottom: 2%;
+	}
+.Siteframe{/*其他影片 比例用*/
+	width: 50%;
+	margin-top: 8%;
+	margin-left: 10%;
+	float: left;
+	}
+.balance iframe{/*影片 填滿比例窗格*/
+	position: absolute;
+	top: 0px;
+	left: 1px;
+	width: 100%;
+	height: 100%;
+}
+.vbalance {/*16:9 影片用*/
+	 position: relative;
+	 height:0;
+    padding-bottom:56.25%;
+    width:100%;
+}
+.3balance {/*三倍長滿版窗格  固定背景大區 比例用*/
+	 position: relative;
+	 height:0;
+    padding-bottom:135%;
+    width:100%;
+}
+.3balance>div{/*三倍長滿版區塊 填滿比例窗格*/
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.Icon {/*並排ICON  出發點*/
+
+	width: 10%;
+	max-height: 200px;
+	margin-left: 12%;
+	float: left;
+	color: #000;
+	font-size: 24px;
+	border: 1px solid #000;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+#click1{
+	width: 10%;
+	position: absolute;
+	margin-top: 6%;
+	margin-left: 82.5%;
+	}
+	#click3{
+	width: 10%;
+	position: absolute;
+	margin-top: 6%;
+	margin-left: 82.5%;
+	}
+#dblink {
+	border: thin solid #FFF;
+	padding: 5px 0 5px 0;
+	border-radius: 5px;
+	width: 6%;
+	text-align: center;
+	margin-left: 47%;
+	color: #FFF;	
+}
+#dblink:hover {
+	border: thin solid #FFF;
+	padding: 5px 0 5px 0;
+	border-radius: 5px;
+	color: black;
+	width: 6%;
+	text-align: center;
+	margin-left:47%;
+	background: rgba(255, 255, 255, 0.6);
+}
+
+#click2{
+	width: 10%;
+	position: absolute;
+	margin-top: 10%;
+	margin-left:65%;
+	}
+
+#Main {
+	width: 100%;
+	background-position: center center;
+	background-size : 33%;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background: rgba(255, 255, 255, 0.6);
+}
+#MAX {
+	width: 100%;
+	max-width: 1280px;
+	overflow: hidden;
+}
+#Spotlight {
+	background-position: center;
+	background-size : 100%;
+	background-image: url(../images/Spotligt_BG.jpg);
+}
+#PRG {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size : 100%;
+	background-color: #000000;
+	width: 100%;
+	background-image: url(../images/PRG_BG.jpg);
+	background-attachment: fixed;
+
+}
+#PRG .CTop {
+	background-position: center;
+	background-size : 100%;
+	background-image: url(../images/Top1_bg.jpg);
+}
+#ELC .CTop {
+	background-position: center;
+	background-size : 100%;
+	background-image: url(../images/Top2_bg.jpg);
+}
+#ART .CTop {
+	background-position: center;
+	background-size : 100%;
+	background-image: url(../images/Top3_bg.jpg);
+}
+#ELC {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size : 100%;
+	background-color: #000000;
+	width: 100%;
+	background-image: url(../images/ELC_BG.jpg);
+	background-attachment: fixed;
+}
+#ART {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size : 100%;
+	background-color: #000000;
+	width: 100%;
+	background-image: url(../images/ART_BG.jpg);
+	background-attachment: fixed;
+}
+
+
+.CTop {
+	background-color: #999;
+	width: 100%;
+}
+.CEmpty {
+	width: 100%;
+	text-align: left;
+	background-repeat: repeat-y;
+	overflow: visible;
+}
+.CBot {
+	background: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100px;
+	margin-bottom: 0px;
+	color: #FFF;
+}
+
+
+
+.Line {
+	height: 45%;
+	width: 30%;
+	margin-top: 5%;
+	margin-left: 65%;
+	float: left;
+	background: rgba(255, 255, 255, 0.6);
+	font-size: 20px;
+	padding: 10px;
+	padding-top:10%;
+	text-align: left;
+}
+.BOT {
+	
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 100px;
+	width: 100%;
+	z-index: 20;
+	background-image: url(../images/BOT.png)  ;
+}
+.Vedio {
+	height: 100%;
+	width: 33%;
+	float: left;
+	position: relative;
+	left: 0%;
+	top: 0%;
+}
+.Intro {
+	display: inline;
+	height: 100%;
+	width: 33%;
+	position: relative;
+	left: 100%;
+	top: 0%;
+}
+
+.Club {
+	display: inline;
+	height: 100%;
+	width: 33%;
+	position: relative;
+	left: 100%;
+	top: 0%;
+}
+#BI {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 20%;
+	position: absolute;
+}
+#BI0 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 18%;
+	height: 40%;
+	margin-top: 17%;
+	margin-left: 14%;
+	position: absolute;
+}
+#BI2 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 33%;
+	height: 40%;
+	margin-top: 25%;
+	margin-left: 35%;
+	position: absolute;
+}
+#BI1 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 28%;
+	height: 40%;
+	margin-top: 21%;
+	margin-left: 71%;
+	position: absolute;
+}
+#DB {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	text-align: center;
+}
+#DB1 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 30%;
+	height: 40%;
+	margin-top: 25%;
+	margin-left: 2%;
+	position: absolute;
+}
+#DB2 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 30%;
+	height: 40%;
+	margin-top: 25%;
+	margin-left: 35%;
+	position: absolute;
+}
+#DB3 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 30%;
+	height: 40%;
+	margin-top: 25%;
+	margin-left: 68%;
+	position: absolute;
+}
+#EL1 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 23%;
+	height: 40%;
+	margin-top: 13%;
+	margin-left: 5%;
+	position: absolute;
+}
+#EL2 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 30%;
+	height: 40%;
+	margin-top: 23%;
+	margin-left: 35%;
+	position: absolute;
+}
+#EL3 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 28%;
+	height: 40%;
+	margin-top: 16%;
+	margin-left: 70%;
+	position: absolute;
+}
+
+@media screen and (max-width: 768px){
+	#One {/*視覺第一欄*/
+	
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size : 70%;
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 30%;
+	width: 50%;
+	margin-left:25%;
+	margin-top: 7%;
+	background-image: url(../images/Spot_bg.png);
+
+}
+#DB {
+	font-size: 12px;
+}
+#BI {
+	font-size: 12px;
+}
+#BI0 {
+	visibility: hidden;
+}
+#BI1 {visibility: hidden;}
+#BI2 {visibility: hidden;}
+#DB3 {
+	visibility: hidden;
+}
+#DB2 {visibility: hidden;}
+#DB1 {visibility: hidden;}
+.Line{font-size: 12px;	
+padding-top:2%;
+
+	height: 53%;}
+	#AboutDTD{/*DTD第二欄 文字*/
+padding-top: 0px;
+width: 90%;
+
+	margin-left: 5%;
+
+}
+}
+
+
+@media screen and (max-width:1000px){
+
+	#CBot {
+	font-size: 12px;
+}
+#AboutDTD{/*DTD第二欄 文字*/
+	
+	font-size: 12px;
+}
+#DB3 {
+	visibility: hidden;
+}
+#DB2 {visibility: hidden;}
+#DB1 {visibility: hidden;}
+#AboutDTD{/*DTD第二欄 文字*/
+	width: 80%;
+	font-size: 14px;
+	
+	margin-left: 10%;
+}
+	#DB {
+	font-size: 14px;
+}
+
+.Line{
+	font-size: 18px;
+	}
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+#MAX {
+	 position: relative;
+	 width: 1280px;
+	left: 50%;
+ 	margin-left: -640px;
+}
+
+#PRG {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size : 1280px;
+	background-color: #000;
+	width: 100%;
+	background-image: url(../images/PRG_BG.jpg);	
+	background-attachment: fixed;
+}
+#ELC {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size : 1280px;
+	background-color: #000;
+	width: 100%;
+	background-image: url(../images/ELC_BG.jpg);
+	background-attachment: fixed;
+}
+#ART {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size : 1280px;
+	background-color: #000;
+	width: 100%;
+	background-image: url(../images/ART_BG.jpg);
+	background-attachment: fixed;
+}
+}

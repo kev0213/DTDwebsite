@@ -1,0 +1,180 @@
+ @-webkit-keyframes pulse { from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.anchor{/*錨點偏移*/
+	display: block;
+	height: 89px;
+	visibility: hidden;
+	margin-top: -90px;
+}
+
+#downbutton{
+  max-width: 60px;
+  max-height: 60px;
+  margin: auto;
+  width: 5%;
+  height: 5%;
+}
+#Two{/*視覺第二欄  ICON
+	margin-left: 20%;*/
+	margin-top: 5%;
+}
+img{
+	width:100%;
+	height:	auto;
+	}
+	.Line {
+	height: 45%;
+	width: 30%;
+	margin-top: 5%;
+	margin-left: 65%;
+	float: left;
+	background: rgba(255, 255, 255, 0.6);
+	font-size: 20px;
+	padding: 10px;
+	padding-top:10%;
+	text-align: left;
+}
+#click1{
+	width: 5%;
+	position: absolute;
+	margin-top: 8%;
+	margin-left: 66%;
+	}
+	#click2{
+	width: 15%;
+	position: absolute;
+	margin-top: 25%;
+	margin-left: 35%;
+	}
+table, th, td {
+	border-collapse: collapse;
+	border-left-width: 5px;
+	border-left-color: #c4e9b5;
+	border-left-style: solid;
+}
+#AboutDTD{/*DTD第二欄 文字*/
+	width: 70%;
+	height: 80%;
+	margin-left: 15%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #CCC;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+balance{
+	background: rgba(0, 0, 0, 0.6);
+}
+#map {
+background: rgba(0, 0, 0, 0.6);}
+
+iframe{
+margin-top:10px;
+    width:80%;}
+.Siteframe{/*比例用*/
+	width: 100%;
+	}
+.mbalance {/*map用*/
+	 position: relative;
+	 height:0;
+    padding-bottom:53.5%;
+    width:100%;
+}
+.mbalance>div{/*一般區塊 填滿比例窗格*/
+	position: absolute;
+	   top:0;
+    left:0;
+	width: 100%;
+	height: 100%;
+}
+.CTop{
+	top:0;
+    left:0;
+	width: 100%;
+	height: 100%;
+	background-size:100%;
+	background-image: url(../images/mp.jpg);
+}
+.CEmpty2 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	text-align: left;
+	background-repeat: repeat-y;
+	overflow: visible;
+	background-size:100%;
+	background-image: url(../images/mpdtd1.jpg);
+}
+.CEmpty3 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	text-align: left;
+	background-repeat: repeat-y;
+	background-size:100%;
+	background-image: url(../images/mpdtd2.jpg);
+}
+#Spotlight {
+	background-position: center;
+	background-size : 100%;
+	background-image: url(../images/Spotligt_map.jpg);
+}
+#One {/*視覺第一欄*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size : 70%;
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 30%;
+	width: 50%;
+	margin-left:25%;
+	margin-top: 7%;
+	background-image: url(../images/Spot_map.png);

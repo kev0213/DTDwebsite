@@ -1,0 +1,232 @@
+.abgneBlock {
+	width: 100%;
+	height: 0;
+    padding-bottom:45%;
+	position: relative;
+	overflow: hidden;
+}
+.abgneBlock ul.list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	width: 400%;
+	height: 100%;
+}
+.abgneBlock ul.list li {
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+.abgneBlock .list img{
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+.abgneBlock ul.playerControl {
+	margin: 0px 0px 30px;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	bottom: 35px;
+	right: 5px;
+	height: 30px;
+
+	/*控制li出現個數*/
+	width: 200px;
+	overflow: hidden;
+}
+.abgneBlock ul.playerControl li {
+	float: left;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin: 0px 10px;
+	background: url(../images/slide_button.png) no-repeat 0 0;
+}
+.abgneBlock ul.playerControl li.current {
+	background-position: -30px 0;
+}
+
+a {
+    text-decoration:none;
+}
+.anchor{/*錨點偏移*/
+	display: block;
+	height: 89px;
+	visibility: hidden;
+	margin-top: -90px;
+}
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.Icon:hover {
+
+   color: black;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  background: rgba(255, 255, 255, 0.6);
+
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+#One {/*視覺第一欄*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size : 70%;
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 30%;
+	width: 50%;
+	margin-left:25%;
+	margin-top: 7%;
+	background-image: url(../images/act/act_intro.png);
+}
+#Two{/*視覺第二欄  ICON
+	margin-left: 20%;*/
+	margin-top: 5%;
+}
+
+.balanceBar {/*滿版窗格 比例用*/
+	z-index: 9;
+	height: 0;
+	padding-bottom: 12.5%;
+	width: 100%;
+	background-size : 100%;
+	background-image: url(../images/BAR2.png);
+	margin-top: -4%;
+	margin-bottom: -5%;
+	position: relative;
+    width:100%;
+}
+.balanceBar {/*滿版窗格 比例用*/
+
+}
+
+.Icon {/*並排ICON  出發點*/
+
+	width: 10%;
+	max-height: 200px;
+	margin-left: 12%;
+	float: left;
+	color: #fff;
+	font-size: 24px;
+	border: 1px solid #fff;
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+	background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+#MAX {
+	width: 100%;
+	max-width: 1600px;
+	overflow: hidden;
+}
+
+
+
+
+#Spotlight {
+	background-position: center;
+	background-size : 100%;
+	background-image: url(../images/act/spotlight.jpg);
+
+}
+.CEmpty {
+	width: 100%;
+	text-align: left;
+	background-repeat: repeat-y;
+	overflow: visible;
+	background-color: #06F;
+}
+
+#infoot{
+	margin-bottom: 100px;
+	}
+
+
+.Line {/*右文字*/
+	height: 80%;
+	width: 30%;
+	margin-top: 10%;
+	margin-right: 5%;
+	float: right;
+	background: rgba(255, 255, 255, 0.6);
+	position: relative;
+}
+.Bar {
+
+}
+
+
+
+
+.Left_Line {/*左文字*/
+	height: 80%;
+	width: 30%;
+	margin-top: 10%;
+	margin-left: 5%;
+	float: lefft;
+	background: rgba(255, 255, 255, 0.6);
+}
+
+
+@media only screen and (min-width: 1280px) {
+
+#MAX {
+	 position: relative;
+	 width: 1280px;
+	left: 50%;
+ 	margin-left: -640px;
+}
+
+}
+}
